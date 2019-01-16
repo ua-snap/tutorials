@@ -11,6 +11,8 @@ xarray = "*"
 scipy = "*"
 "netcdf4" = "*"
 rasterio = "*"
+shapely = "*"
+geopandas = "*"
 
 
 [dev-packages]
