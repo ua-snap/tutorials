@@ -1,5 +1,6 @@
-# NetCDF (if data is copied locally)
+# Data and other files to ignore
 *.nc
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
