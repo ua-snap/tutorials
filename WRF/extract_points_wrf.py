@@ -6,6 +6,7 @@ Assumes that the `wrf-ak-ar5` S3 bucket is mounted at `~/wrf-ak-ar5`
 
 Authors: Michael Lindgren (malindgren@alaska.edu), SNAP
 """
+import netCDF4 # prevent occasional obscure HDF5 issue with file locking on CentOS
 
 # Setup logger to print to STDOUT
 import logging
@@ -14,7 +15,7 @@ log = logging.getLogger()
 log.setLevel(logging.INFO)
 handler = logging.StreamHandler(sys.stdout)
 handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 handler.setFormatter(formatter)
 log.addHandler(handler)
 
