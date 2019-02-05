@@ -1,4 +1,4 @@
-# Exploring WRF data on AWS
+#  Tutorial: WRF point extraction
 
 This example shows how to extract a timeseries of temperature values for some locations specified with lat/lon from the [dynamically downscaled climate data for Alaska](https://registry.opendata.aws/wrf-alaska-snap/).  This tutorial assumes you have basic knowledge about how to launch an EC2 instance on AWS, and basic knowledge about using the command line in Linux.
 
